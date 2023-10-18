@@ -7,7 +7,6 @@ import java.util.Set;
 
 public class generate_parentheses22 {
     public static void main(String[] args) {
-        System.out.println(Integer.MIN_VALUE);
         System.out.println(generateParenthesis(3));
     }
 
