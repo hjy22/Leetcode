@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class foursum18 {
+public class foursum18M {
     public static void main(String[] args) {
         int[] nums = {1,0,-1,0,-2,2,-0};
         System.out.println(fourSum(nums,0));
@@ -42,9 +42,6 @@ public class foursum18 {
     static List<List<Integer>> twoSum(int[] nums, int index, int target,int ans1,int ans2){
         List<List<Integer>> wholeList = new ArrayList<>();
         Map<Integer, Integer> numMap = new HashMap<>();
-        if (target <= Integer.MIN_VALUE && target >= Integer.MAX_VALUE) {
-            return wholeList;
-        }
         for(int i =index+1;i<nums.length;i++){
             numMap.put(nums[i],i);
         }

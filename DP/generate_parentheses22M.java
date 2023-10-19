@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class generate_parentheses22 {
+public class generate_parentheses22M {
     public static void main(String[] args) {
         System.out.println(generateParenthesis(3));
     }
