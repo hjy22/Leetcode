@@ -28,9 +28,5 @@ public class pair {
             stack.pop();
         }
     }
-    if(stack.isEmpty()){
-        return true;
-    }
-    return false;
-    }
+    return stack.isEmpty();
 }
