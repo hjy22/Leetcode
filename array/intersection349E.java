@@ -1,6 +1,7 @@
 package array;
 import java.util.*;
 
+//https://leetcode.com/problems/intersection-of-two-arrays/
 public class intersection349E {
     public static void main(String[] args) {
         int[] num1 = {1,2,2,1};

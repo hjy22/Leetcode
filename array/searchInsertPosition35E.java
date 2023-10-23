@@ -1,5 +1,6 @@
 package array;
 
+//https://leetcode.com/problems/search-insert-position/
 public class searchInsertPosition35E {
     public static void main(String[] args) {
         int[] nums = {1,3,5,6};

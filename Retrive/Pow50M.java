@@ -1,5 +1,6 @@
 import java.util.*;
 
+//https://leetcode.com/problems/powx-n/
 public class Pow50M {
     public static void main(String[] args) {
         System.out.println(myPow(2,2));
