@@ -1,7 +1,7 @@
 package array;
 
 //https://leetcode.com/problems/find-triangular-sum-of-an-array/
-public class triangularSum2221M {
+public class TriangularSum2221M {
     public static void main(String[] args) {
         int[] nums = {1,1};
         System.out.println(triangularSum(nums));

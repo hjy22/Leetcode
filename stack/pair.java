@@ -2,7 +2,7 @@ package stack;
 
 import java.util.Stack;
 
-public class pair {
+public class Pair {
     public static void main(String[] args) {
         String s = "[[[]]]{{{}}}((())))";
         System.out.println(isBalanced(s));

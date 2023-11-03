@@ -2,7 +2,7 @@ package LinkList;
 
 import java.util.Stack;
 
-public class addTwoNumbers445M {
+public class AddTwoNumbers445M {
     public class ListNode {
         int val;
         ListNode next;

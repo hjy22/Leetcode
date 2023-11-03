@@ -1,7 +1,7 @@
 package LinkList;
 
 //https://leetcode.com/problems/merge-two-sorted-lists/description/
-public class mergeTwoList21E {
+public class MergeTwoList21E {
     public static void main(String[] args) {
     }
 

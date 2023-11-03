@@ -1,7 +1,7 @@
 package array;
 
 //https://leetcode.com/problems/next-greater-element-i/
-public class nextGreater496E {
+public class NextGreater496E {
     public static void main(String[] args) {
         int[] nums1 = {2,4};
         int[] nums2 = {1,2,3,4};
