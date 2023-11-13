@@ -2,6 +2,7 @@ package Tree;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 // https://leetcode.com/problems/print-binary-tree/
 public class PrintBinaryTreeM655 {
@@ -25,40 +26,33 @@ public class PrintBinaryTreeM655 {
     }
 
     public List<List<String>> printTree(TreeNode root) {
-
         int height = getHeight(root);
-        int n = (int) Math.pow(2, height + 1) - 1;
-        TreeNode node = new TreeNode(n);
-        TreeNode newTree = buildTree(node, height, 0, n);
-
-        List<List<String>> result = new ArrayList<>();
-        for (int i = 0; i <= height; i++) {
-            List<String> list = new ArrayList<>();
-            for (int j = 0; j < n; j++) {
-                if (j == newTree.val) {
-                    list.add(String.valueOf(root.val));
-                } else {
-                    list.add("");
-                }
-            }
-            result.add(list);
+        int n = (int) Math.pow(2, height) - 1;
+        String[][] matrix = new String[height][n];
+        for(String[] row : matrix){
+            Arrays.fill(row,"");
         }
-        return result;
+        buildTree(matrix, root,0, 0, n-1);
+        List<List<String>> list = new ArrayList<>();
+        for(String[] row:matrix){
+            list.add(Arrays.asList(row));
+        }
+        return list;
     }
 
-    public TreeNode buildMatrix(TreeNode node, int height, int r, int c) {
-        if(node==null){
-            return null;
+    public void buildTree(String[][] matrix,TreeNode node,int row,int left, int right){
+        if (node==null){
+            return;
         }
-        TreeNode newTree = new TreeNode(node.val);
-        newTree.left = buildMatrix(node.left, height, r + 1, c - (int) Math.pow(2, height - r - 1));
-        newTree.right = buildMatrix(node.right, height, r + 1, c + (int) Math.pow(2, height - r - 1));
-        return newTree;
+        int mid = left+(right-left)/2;
+        matrix[row][mid]=String.valueOf(node.val);
+        buildTree(matrix,node.left,row+1,left,mid-1);
+        buildTree(matrix,node.right,row+1,mid+1,right);
     }
 
     public int getHeight(TreeNode root) {
         if (root == null) {
-            return -1;
+            return 0;
         }
         return 1 + Math.max(getHeight(root.left), getHeight(root.right));
     }
