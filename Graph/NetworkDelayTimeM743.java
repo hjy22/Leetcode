@@ -1,8 +1,8 @@
 package Graph;
 
 import java.util.*;
-import javafx.util.Pair;
 
+//https://leetcode.com/problems/network-delay-time/description/
 public class NetworkDelayTimeM743 {
     public static void main(String[] args) {
         int[][] times = { { 2, 1, 1 }, { 2, 3, 1 }, { 3, 4, 1 } };
@@ -48,27 +48,31 @@ public class NetworkDelayTimeM743 {
                     }
                 }
             }
-            
+
         }
         printVertx(vertex);
         return getMin(vertex);
     }
 
     public static void printVertx(int[][] vertex) {
-        for (int[] a : vertex) {
-            for (int b : a) {
-                System.out.print(b + " ");
+        for (int[] vex1 : vertex) {
+            for (int vex2 : vex1) {
+                System.out.print(vex2 + " ");
             }
             System.out.println("");
         }
     }
 
-    private static int getMin(int[][] vertex){
-        int max=Integer.MIN_VALUE;
-        for (int[] a : vertex) {
-            if(max<a[1]){
-                max = a[1];
+    private static int getMin(int[][] vertex) {
+        int max = Integer.MIN_VALUE;
+        for (int[] vex : vertex) {
+            if (max < vex[1]) {
+                max = vex[1];
             }
+
+        }
+        if (max == Integer.MAX_VALUE) {
+            return -1;
         }
         return max;
     }

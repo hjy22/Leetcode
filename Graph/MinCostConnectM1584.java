@@ -6,18 +6,7 @@ import java.util.*;
 public class MinCostConnectM1584 {
     public static void main(String[] args) {
         int[][] points = { { 0, 0 }, { 2, 2 }, { 3, 10 }, { 5, 2 }, { 7, 0 } };
-        // System.out.println(minCostConnectPoints(points));
-        // 使用自定义比较器，按照降序排序
-        PriorityQueue<Integer> customPriorityQueue = new PriorityQueue<>();
-        customPriorityQueue.add(3);
-        customPriorityQueue.add(1);
-        customPriorityQueue.add(5);
-        customPriorityQueue.add(2);
-        int i = 4;
-        while (i > 0) {
-            i--;
-            System.out.println("Custom PriorityQueue中的元素：" + customPriorityQueue.poll());
-        }
+        System.out.println(minCostConnectPoints(points));
     }
 
     public static int minCostConnectPoints(int[][] points) {
