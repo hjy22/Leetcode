@@ -1,4 +1,4 @@
-package array;
+package Array;
 
 //https://leetcode.com/problems/next-greater-element-i/
 public class NextGreater496E {

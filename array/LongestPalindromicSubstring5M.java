@@ -1,4 +1,4 @@
-package array;
+package Array;
 
 //https://leetcode.com/problems/longest-palindromic-substring/
 public class LongestPalindromicSubstring5M {

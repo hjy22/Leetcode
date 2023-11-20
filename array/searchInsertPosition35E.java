@@ -1,4 +1,4 @@
-package array;
+package Array;
 
 //https://leetcode.com/problems/search-insert-position/
 public class SearchInsertPosition35E {

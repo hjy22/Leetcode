@@ -1,4 +1,4 @@
-package array;
+package Array;
 
 //https://leetcode.com/problems/rotate-image/
 public class RotateImage48M {

@@ -1,4 +1,4 @@
-package array;
+package Array;
 
 //https://leetcode.com/problems/move-zeroes/
 public class MoveZeroes283E {

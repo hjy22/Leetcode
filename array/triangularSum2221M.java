@@ -1,4 +1,4 @@
-package array;
+package Array;
 
 //https://leetcode.com/problems/find-triangular-sum-of-an-array/
 public class TriangularSum2221M {
