@@ -8,7 +8,7 @@ public class NetworkDelayTimeM743 {
         int[][] times = { { 2, 1, 1 }, { 2, 3, 1 }, { 3, 4, 1 } };
         int n = 4;
         int k = 2;
-        networkDelayTime(times, n, k);
+        System.out.println(networkDelayTime(times, n, k));
     }
 
     public static int networkDelayTime(int[][] times, int n, int k) {
@@ -50,7 +50,6 @@ public class NetworkDelayTimeM743 {
             }
 
         }
-        printVertx(vertex);
         return getMin(vertex);
     }
 
