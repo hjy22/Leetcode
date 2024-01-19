@@ -1,4 +1,4 @@
-package TwoPointer;
+package Array;
 
 //https://leetcode.com/problems/reverse-string-ii/
 public class ReverseString541E {
