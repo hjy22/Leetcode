@@ -1,4 +1,4 @@
-package OA.mihayou;
+package Interview.mihayou;
 import java.util.Scanner;
 
 public class newA {
