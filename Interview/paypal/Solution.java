@@ -1,10 +1,6 @@
 package Interview.paypal;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 class Acquaintance{
     String friendName;

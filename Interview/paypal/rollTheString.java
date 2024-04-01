@@ -1,7 +1,6 @@
 package Interview.paypal;
 
 import java.util.*;
-import java.lang.*;
 
 public class rollTheString {
     public static void main(String[] args){
@@ -10,7 +9,7 @@ public class rollTheString {
         roll.add(3);
         System.out.println(newRollTheString(s,roll));
     }
-    public static String rollTheString(String s, List<Integer> roll) {
+    public static String rollTheStrings(String s, List<Integer> roll) {
         // Write your code here
         String ans = s;
         for (int i = 0; i < roll.size(); i++) {

@@ -1,7 +1,6 @@
 package Interview.mihayou;
-import java.util.Scanner;
 
-public class newA {
+public class shortestSubstring {
     public static void main(String[] args){
         // Scanner scanner = new Scanner(System.in);
         // String str=scanner.nextLine();

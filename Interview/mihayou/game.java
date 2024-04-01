@@ -2,7 +2,7 @@ package Interview.mihayou;
 
 import java.util.Scanner;
 
-public class test1 {
+public class game {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         // int times=Integer.valueOf(scanner.nextLine());
