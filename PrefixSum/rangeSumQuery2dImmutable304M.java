@@ -1,4 +1,4 @@
-package DP;
+package PrefixSum;
 
 import java.util.Arrays;
 

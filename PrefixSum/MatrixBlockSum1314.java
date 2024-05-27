@@ -1,4 +1,4 @@
-package DP;
+package PrefixSum;
 
 //https://leetcode.com/problems/matrix-block-sum/
 public class MatrixBlockSum1314 {
