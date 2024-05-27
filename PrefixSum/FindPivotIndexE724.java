@@ -1,4 +1,4 @@
-package DP;
+package PrefixSum;
 
 public class FindPivotIndexE724 {
     public static void main(String[] args) {

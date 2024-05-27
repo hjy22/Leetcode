@@ -3,6 +3,9 @@ package Array;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * 将0视为-1，1视为1，这样问题就转化为在数组中找到和为0的最长子数组。
+ */
 //https://leetcode.com/problems/contiguous-array/
 public class ContiguousArray525M {
     public static void main(String[] args) {
@@ -11,20 +14,24 @@ public class ContiguousArray525M {
     }
 
     public static int findMaxLength(int[] nums) {
-        Map<Integer,Integer> map = new HashMap<>();
-        for(int i:nums){
-            map.put(i,map.getOrDefault(i, 0)+1);
+        int[] sumArray = new int[nums.length+1];
+        sumArray[0]=0;
+        for(int i=1; i<sumArray.length; i++){
+            sumArray[i] = sumArray[i-1] + (nums[i-1] == 0 ? -1 : 1);
+            System.out.println(sumArray[i]);
         }
-        for(int i=0;i<nums.length;i++){
-            int zero=map.get(0);
-            int one=map.get(1);
-            if(zero==one){
-                return nums.length-i;
-            }else{
-                System.out.println(map.get(i));
-                map.put(i,map.get(i)-1);
+        // 前缀和到索引的映射，方便快速查找所需的前缀和
+        HashMap<Integer, Integer> valToIndex = new HashMap<>();
+        int maxLength = 0;
+
+        //把出现的index存在map里，若第二次出现，就从map中取上一次出现的index
+        for (int i = 0; i < sumArray.length; i++) {
+            if (!valToIndex.containsKey(sumArray[i])) {
+                valToIndex.put(sumArray[i], i);
+            } else {
+                maxLength = Math.max(maxLength, i - valToIndex.get(sumArray[i]));
             }
         }
-        return 0;
+        return maxLength;
     }
 }

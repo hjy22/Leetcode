@@ -1,4 +1,4 @@
-package DP;
+package PrefixSum;
 
 //https://leetcode.com/problems/product-of-array-except-self/
 public class ProductofArrayExceptSelf238M {
