@@ -1,4 +1,4 @@
-package SliceWindows;
+package Labuladong.SliceWindows;
 
 import java.util.HashMap;
 import java.util.HashSet;
