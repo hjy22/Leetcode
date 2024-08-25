@@ -9,17 +9,15 @@ public class CompareVersionNumbers165M {
     public static int compareVersion(String version1, String version2) {
         String[] versionArray1 = version1.split("\\.");
         String[] versionArray2 = version2.split("\\.");
-        if (Integer.valueOf(versionArray1[0]) > Integer.valueOf(versionArray2[0])) {
-            return 1;
-        } else if (Integer.valueOf(versionArray1[0]) < Integer.valueOf(versionArray2[0])) {
-            return -1;
-        } else {
-            if (Integer.valueOf(versionArray1[1]) > Integer.valueOf(versionArray2[1])) {
+        for (int i = 0; i < Math.max(versionArray1.length, versionArray2.length); i++) {
+            int num1 = i < versionArray1.length ? Integer.valueOf(versionArray1[i]) : 0;
+            int num2 = i < versionArray2.length ? Integer.valueOf(versionArray2[i]) : 0;
+
+            if (num1 < num2) {
                 return -1;
-            } else if (Integer.valueOf(versionArray1[1]) < Integer.valueOf(versionArray2[1])) {
-                {
-                    return 1;
-                }
+            } 
+            if (num1 > num2) {
+                return 1;
             }
         }
         return 0;
