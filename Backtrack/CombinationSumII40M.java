@@ -30,7 +30,7 @@ public class CombinationSumII40M {
         // 遍历
         for (int i = start; i < nums.length; i++) {
             // 如果当前数字和前一个数字相同，并且前一个数字还没有被使用，跳过
-            if (nums[i] == nums[i - 1] && i > start) {
+            if (i > 0 && nums[i] == nums[i - 1] && i > start) {
                 continue;
             }
             if (sum + nums[i] > target) {
