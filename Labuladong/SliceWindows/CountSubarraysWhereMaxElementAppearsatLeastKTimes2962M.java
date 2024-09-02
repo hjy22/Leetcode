@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/
-public class CountSubarraysWhereMaxElementAppearsatLeastKTimes2963M {
+public class CountSubarraysWhereMaxElementAppearsatLeastKTimes2962M {
     public static void main(String[] args) {
         int[] nums = { 2,2,2,2,1,3,3,2,2,1,1,3,1,1,2,3,2,1,1,2,1,1,2,1,2,1,2,1,3,1,3,3};
         int k = 5;
