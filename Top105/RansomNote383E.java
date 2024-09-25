@@ -1,5 +1,6 @@
 package Top105;
 
+// https://leetcode.com/problems/ransom-note/?envType=study-plan-v2&envId=top-interview-150
 public class RansomNote383E {
     public static void main(String[] args) {
         String ransomNote = "a", magazine = "b";
