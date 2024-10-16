@@ -25,7 +25,6 @@ public class ReorganizeString767M {
         });
         queue.addAll(map.keySet());
         
-        StringBuilder res = new StringBuilder();
         char[] result = new char[s.length()];
         int i = 0;
         while (!queue.isEmpty()) {
