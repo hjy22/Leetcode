@@ -1,6 +1,5 @@
 package Labuladong.List;
 
-// https://leetcode.com/problems/longest-palindromic-substring/ 
 public class LongestPalindromicSubstring5M {
     public static void main(String[] args) {
         String s = "babad";
